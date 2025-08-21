@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet" />
+    <title>Document</title>
+
+  </head>
+  <body>
+
+    <!-- navigation bar -->
+    <header class="bg-[#4C4B16] text-white px-6 py-4 relative z-20 font-['Chakra_Petch'] font-light">
+      <div class="max-w-6xl mx-auto flex items-center justify-between">
+        <nav class="flex gap-8 text-lg font-semibold ml-0 mt-2 font-['Chakra_Petch'] font-thin">
+          <a href="about.html" class="hover:underline">about</a>
+          <a href="popular.html" class="hover:underline">popular</a>
+          <a href="Care&Habitat.html" class="hover:underline">care&habitat</a>
+          <a href="blogger.html" class="hover:underline">blog</a>
+          <a href="contact.html" class="hover:underline">contact</a>
+        </nav>
+        
+        <a href="home.html">
+          <img
+          src="img/logoExoticPet.png"
+          alt="logo"
+          class="absolute left-1/2 -translate-x-1/2 top-2 h-12"/>
+        </a>
+        
+        <div class="flex items-center bg-white rounded-full px-4 py-2 w-80 shadow">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="#4C4B16"
+            class="w-5 h-5">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M21 21l-4.35-4.35M17 10a7 7 0 11-14 0 7 7 0 0114 0z"/>
+          </svg>
+          <input
+            type="text"
+            placeholder="search"
+            class="ml-2 w-full bg-transparent focus:outline-none text-[#4C4B16]"/>
+        </div>
+      </div>
+    </header>
+
+    <!-- hero banner -->
+    <section class="relative h-[380px] md:h-[520px] -z-10">
+      <!-- background -->
+      <img
+        src="img/bg1.png"
+        alt="Hero Banner"
+        class="absolute inset-0 w-full h-full object-cover"
+        style="top: 220px; position: absolute"/>
+
+      <!-- black gradient -->
+      <div class="absolute left-0 top-0 w-full h-[90%] bg-gradient-to-b from-black from-45% to-transparent z-10"></div>
+
+      <!-- cloud top -->
+      <img
+        src="img/top_edit2.png"
+        alt="cloud top"
+        class="absolute top-0 left-0 w-full z-10"
+        draggable="false"/>
+
+      <!-- text -->
+      <div class="relative mx-auto flex h-full max-w-6xl items-center px-6 z-20 top-70 font-['ZCOOL_KuaiLe']">
+        <div class="max-w-md text-white">
+          <p class="text-lg md:text-5xl">Discover the</p>
+          <h1 class="font-heading text-3xl md:text-5xl leading-tight">
+            beauty of the wild,
+          </h1>
+          <h2 class="font-heading text-2xl md:text-4xl">right at home.</h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- popular pets section -->
+    <div class="mt-70 flex flex-col justify-center items-center">
+      <h1 class="font-['ZCOOL_KuaiLe'] text-5xl text-[#644A07]">Popular Pets</h1>
+      <h2 class="font-['Chakra_Petch'] font-normal text-[#644A07] text-3xl mt-5">Exotic Pets</h2>
+    </div>
+
+    <!-- image&content of popular pets -->
+    <!-- wallaby -1 -->
+    <section class="max-w-5xl mx-auto grid md:grid-cols-2 items-center gap-8 py-10 px-6">
+        <div class="relative">
+            <img src="img/dec1.png" alt="background" class="w-full h-auto scale-200 mt-10">
+            <div class="absolute inset-0 flex items-center justify-center p-6 text-white">
+                <div class="font-['ZCOOL_KuaiLe'] text-center">
+                    <h2 class="text-5xl font-extrabold mt-17 mb-0">Wallaby</h2>
+                    <p class="-mt-5 text-xl leading-relaxed whitespace-pre-line">
+                        Wallabies are small kangaroo 
+                        like marsupials from Australia. 
+                        They’re gentle, shy, 
+                        and need spacious care.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex justify-center">
+            <img src="img/wallaby.png" alt="Wallaby" class="max-h-80 scale-180 mt-25 ml-20 object-contain">
+        </div>
+    </section>
+
+    <!-- Ferret -->
+    <section class="max-w-5xl mx-auto grid md:grid-cols-2 items-center gap-8 py-10 px-6">
+        <div class="order-2 md:order-1 flex justify-center">
+            <img src="img/ferret.png" alt="Ferret" class="max-h-80 scale-180 -mt-30 ml-10 object-contain">
+        </div>
+
+        <div class="font-['ZCOOL_KuaiLe'] order-1 md:order-2 p-6 ml-20 -mt-25 -ml-500 text-left w-140 h-auto text-[#644A07]">
+            <h2 class="text-5xl font-extrabold">Ferret</h2>
+            <p class="-mt-5 text-xl leading-relaxed whitespace-pre-line">
+                Ferrets are playful, curious, 
+                and intelligent mammals. 
+                They love to explore and interact with people.
+            </p>
+        </div>
+    </section>
+
+  <!-- Ball Python -->
+  <section class="max-w-5xl mx-auto grid md:grid-cols-2 items-center gap-8 py-10 px-6 -mt-30">
+        <div class="relative"> 
+            <img src="img/dec1.png" alt="background" class="w-full h-auto scale-200 mt-10">
+            <div class="absolute inset-0 flex items-center justify-center p-6 text-white">
+                <div class="font-['ZCOOL_KuaiLe'] text-center">
+                    <h2 class="text-5xl font-extrabold mt-17 mb-0">Ball Pythons</h2>
+                    <p class="-mt-5 text-xl leading-relaxed whitespace-pre-line">
+                        Ball Pythons are calm, non-venomous 
+                        snakes that are easy to handle. 
+                        Great for beginner reptile keepers.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex justify-center">
+            <img src="img/snake2.png" alt="Wallaby" class="max-h-80 scale-200 mt-25 ml-20 object-contain">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <img src="img/below_edit2.png" alt="cloud below" class="w-full block -mt-50" draggable="false" />
+    <footer class="bg-[#4C4B16] text-white text-center py-6 relative bg-[url('img/bg2.png')] bg-cover bg-center font-['Chakra_Petch'] font-light">
+        <div class="text-xs mb-2">
+            <h2 class="text-lg">Copyright © 2025 Thanatchapond, Kotchapat, Yossakorn. Ltd. All rights reserved.</h2>
+        </div>
+        <div class="mb-2 text-lg">Follow us</div>
+        <div class="flex justify-center gap-4">
+            <a href="#" class="flex items-center gap-1 px-2 py-1 border border-white rounded">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/500px-Facebook_Logo_%282019%29.png" 
+                alt="Facebook" class="h-5">ExoticPets Thailand
+            </a>
+            <a href="#" class="flex items-center gap-1 px-2 py-1 border border-white rounded">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1000px-Instagram_logo_2022.svg.png" 
+                alt="Instagram" class="h-5">ExoticPets
+            </a>
+        </div>
+    </footer>
+
+  </body>
+</html>

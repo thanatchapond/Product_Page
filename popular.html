@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet" />
+    <title>Document</title>
+
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <header class="bg-[#4C4B16] text-white px-6 py-4 relative z-20 font-['Chakra_Petch'] font-light">
+      <div class="max-w-6xl mx-auto flex items-center justify-between">
+        <nav class="flex gap-8 text-lg font-semibold ml-0 mt-2 font-['Chakra_Petch'] font-thin">
+          <a href="about.html" class="hover:underline">about</a>
+          <a href="popular.html" class="hover:underline">popular</a>
+          <a href="Care&Habitat.html" class="hover:underline">care&habitat</a>
+          <a href="blogger.html" class="hover:underline">blog</a>
+          <a href="contact.html" class="hover:underline">contact</a>
+        </nav>
+
+        <a href="home.html">
+            <img
+            src="img/logoExoticPet.png"
+            alt="logo"
+            class="absolute left-1/2 -translate-x-1/2 top-2 h-12"/>
+        </a>
+
+        <div class="flex items-center bg-white rounded-full px-4 py-2 w-80 shadow">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="#4C4B16"
+            class="w-5 h-5">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M21 21l-4.35-4.35M17 10a7 7 0 11-14 0 7 7 0 0114 0z"/>
+          </svg>
+          <input
+            type="text"
+            placeholder="search"
+            class="ml-2 w-full bg-transparent focus:outline-none text-[#4C4B16]"/>
+        </div>
+      </div>
+    </header>
+    
+    <img
+        src="img/top_edit2.png"
+        alt="cloud top"
+        class="absolute top-10 left-0 w-full z-10"
+        draggable="false"/>
+
+    <!-- popular pets section -->
+    <div class="mt-50 flex flex-col justify-center items-center">
+      <h1 class="font-['ZCOOL_KuaiLe'] text-5xl text-[#644A07]">Popular Pets</h1>
+      <h2 class="font-['Chakra_Petch'] font-normal text-[#644A07] text-3xl mt-5">Exotic Pets</h2>
+    </div>
+
+    <!-- select button -->
+    <div class="flex items-center justify-center gap-4 px-6 py-4 mt-10 font-['Chakra_Petch']">
+        <!-- arrow button -->
+        <span class="text-[#4C4B16] text-2xl font-bold">&gt;</span>
+
+        <!-- menu-->
+        <div class="flex gap-6">
+            <a href="#"
+            class="px-6 py-2 rounded-full bg-white text-[#4C4B16] font-semibold shadow-md hover:shadow-lg transition">
+            Reptiles
+            </a>
+
+            <a href="#"
+            class="px-6 py-2 rounded-full bg-white text-[#4C4B16] font-semibold shadow-md hover:shadow-lg transition">
+            Amphibians
+            </a>
+
+            <a href="#"
+            class="px-6 py-2 rounded-full bg-white text-[#4C4B16] font-semibold shadow-md hover:shadow-lg transition">
+            Birds
+            </a>
+
+            <a href="#"
+            class="px-6 py-2 rounded-full bg-white text-[#4C4B16] font-semibold shadow-md hover:shadow-lg transition">
+            Small mammals
+            </a>
+
+            <a href="#"
+            class="px-6 py-2 rounded-full bg-white text-[#4C4B16] font-semibold shadow-md hover:shadow-lg transition">
+            Invertebrates
+            </a>
+        </div>
+    </div>
+
+    <!-- content section -->
+    <section class="max-w-6xl mx-auto px-4 py-8">
+  
+        <ul class="grid grid-cols-4 gap-6 font-['ZCOOL_KuaiLe']">
+        
+            <!-- row 1 -->
+            <li class="rounded-3xl shadow-[0_6px_0_rgba(0,0,0,0.15)] odd:bg-[#5a5a22] even:bg-[#745113] p-4 flex flex-col items-center justify-between aspect-square">
+                <img src="img/fennecfox.png" 
+                class="object-contain mx-auto scale-160 mt-5" alt="Fennec Fox">
+                <p class="font-zcool text-white text-xl tracking-wide mt-2">Fennec Fox</p>
+            </li>
+
+            <li class="rounded-3xl shadow-[0_6px_0_rgba(0,0,0,0.15)] odd:bg-[#5a5a22] even:bg-[#745113] p-4 flex flex-col items-center justify-between aspect-square">
+                <img src="img/capibara.png" 
+                class="mx-auto scale-210 mt-5 ml-5" alt="Capybara">
+                <p class="font-zcool text-white text-xl tracking-wide mt-2">Capybara</p>
+            </li>
+
+            <li class="rounded-3xl shadow-[0_6px_0_rgba(0,0,0,0.15)] odd:bg-[#5a5a22] even:bg-[#745113] p-4 flex flex-col items-center justify-between aspect-square">
+                <img src="img/gacko.png" 
+                class="object-contain mx-auto scale-150 mt-5" 
+                alt="Leopard Gecko">
+                <p class="font-zcool text-white text-xl tracking-wide mt-2 text-center leading-tight">Leopard Gacko</p>
+            </li>
+
+            <li class="rounded-3xl shadow-[0_6px_0_rgba(0,0,0,0.15)] odd:bg-[#5a5a22] even:bg-[#745113] p-4 flex flex-col items-center justify-between aspect-square">
+                <img src="img/raccoon.png" 
+                class="object-contain mx-auto scale-300 mt-12" alt="Raccoon">
+                <p class="font-zcool text-white text-xl tracking-wide mt-2">Raccoon</p>
+            </li>
+
+            <!-- row 2 -->
+            <li class="rounded-3xl shadow-[0_6px_0_rgba(0,0,0,0.15)] odd:bg-[#5a5a22] even:bg-[#745113] p-4 flex flex-col items-center justify-between aspect-square">
+                <img src="img/meercat.png" 
+                class="object-contain mx-auto scale-160 mt-5" alt="Meercat">
+                <p class="font-zcool text-white text-xl tracking-wide mt-2">Meercat</p>
+            </li>
+
+            <li class="rounded-3xl shadow-[0_6px_0_rgba(0,0,0,0.15)] odd:bg-[#5a5a22] even:bg-[#745113] p-4 flex flex-col items-center justify-between aspect-square">
+                <img src="img/pairiedog.png" 
+                class="object-contain mx-auto scale-200 mt-5" alt="Prairie Dog">
+                <p class="font-zcool text-white text-xl tracking-wide mt-2">Prairie Dog</p>
+            </li>
+
+            <li class="rounded-3xl shadow-[0_6px_0_rgba(0,0,0,0.15)] odd:bg-[#5a5a22] even:bg-[#745113 p-4 flex flex-col items-center justify-between aspect-square">
+                <img src="img/axolotl.png" 
+                class="object-contain mx-auto scale-180 mt-5" alt="Axolotl">
+                <p class="font-zcool text-white text-xl tracking-wide mt-2">Axolotl</p>
+            </li>
+
+            <li class="rounded-3xl shadow-[0_6px_0_rgba(0,0,0,0.15)] odd:bg-[#5a5a22] even:bg-[#745113] p-4 flex flex-col items-center justify-between aspect-square">
+                <img src="img/tarantula.png" 
+                class="object-contain mx-auto scale-200 mt-5" alt="Tarantula">
+                <p class="font-zcool text-white text-xl tracking-wide mt-2">Tarantula</p>
+            </li>
+
+            <!-- row 3 -->
+            <li class="rounded-3xl shadow-[0_6px_0_rgba(0,0,0,0.15)] odd:bg-[#5a5a22] even:bg-[#745113] p-4 flex flex-col items-center justify-between aspect-square">
+                <img src="img/hamster.png" 
+                class="object-contain mx-auto scale-200 mt-5" alt="Hamster">
+                <p class="font-zcool text-white text-xl tracking-wide mt-2">Hamster</p>
+            </li>
+
+            <li class="rounded-3xl shadow-[0_6px_0_rgba(0,0,0,0.15)] odd:bg-[#5a5a22] even:bg-[#745113] p-4 flex flex-col items-center justify-between aspect-square">
+                <img src="img/sulcata.png" 
+                class="object-contain mx-auto scale-170 mt-5 ml-4" alt="Sulcata">
+                <p class="font-zcool text-white text-xl tracking-wide mt-2">Sulcata</p>
+            </li>
+
+            <li class="rounded-3xl shadow-[0_6px_0_rgba(0,0,0,0.15)] odd:bg-[#5a5a22] even:bg-[#745113] p-4 flex flex-col items-center justify-between aspect-square">
+                <img src="img/chinchilla.png" 
+                class="object-contain mx-auto scale-180" alt="Chinchilla">
+                <p class="font-zcool text-white text-xl tracking-wide mt-2">Chinchilla</p>
+            </li>
+
+            <li class="rounded-3xl shadow-[0_6px_0_rgba(0,0,0,0.15)] odd:bg-[#5a5a22] even:bg-[#745113] p-4 flex flex-col items-center justify-between aspect-square">
+                <img src="img/hedgehog.png" 
+                class="object-contain mx-auto scale-220 mt-8" alt="Hedgehog">
+                <p class="font-zcool text-white text-xl tracking-wide mt-2">Hedgehog</p>
+            </li>
+        </ul>
+    </section>
+
+    
+    <!-- Footer -->
+    <img src="img/below_edit2.png" alt="cloud below" class="w-full block -mt-50" draggable="false" />
+    <footer class="bg-[#4C4B16] text-white text-center py-6 relative bg-[url('img/bg2.png')] bg-cover bg-center font-['Chakra_Petch'] font-light">
+        <div class="text-xs mb-2">
+            <h2 class="text-lg">Copyright © 2025 Thanatchapond, Kotchapat, Yossakorn. Ltd. All rights reserved.</h2>
+        </div>
+        <div class="mb-2 text-lg">Follow us</div>
+        <div class="flex justify-center gap-4">
+            <a href="#" class="flex items-center gap-1 px-2 py-1 border border-white rounded">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/500px-Facebook_Logo_%282019%29.png" 
+                alt="Facebook" class="h-5">ExoticPets Thailand
+            </a>
+            <a href="#" class="flex items-center gap-1 px-2 py-1 border border-white rounded">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1000px-Instagram_logo_2022.svg.png" 
+                alt="Instagram" class="h-5">ExoticPets
+            </a>
+        </div>
+    </footer>
+
+
+
+  </body>
+</html>
